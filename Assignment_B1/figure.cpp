@@ -70,11 +70,8 @@ std::string Figure::GetBoundingBox() const
                     }
                 }
 
-                if (tempCordsArr)
-                {
-                    delete[] tempCordsArr;
-                    tempCordsArr = nullptr;
-                }
+                delete[] tempCordsArr;
+                tempCordsArr = nullptr;
             }
         }
 
